@@ -1,0 +1,100 @@
+{
+  "build": {
+    "filename": "babylon.editor.max.js",
+    "minFilename": "babylon.editor.js",
+    "declarationFilename": "babylon.editor.d.ts",
+    "outputDirectory": "libs/preview release",
+    "srcOutputDirectory": "sources/"
+  },
+  "core": {
+    "defines": [
+      "!sources/**/*.d.ts",
+      "defines/**/*.d.ts"
+    ],
+    "typescriptBuild": [
+      "sources/**/*.ts",
+      "!sources/**/*.d.ts",
+      "defines/**/*.d.ts"
+    ],
+    "files": [
+      "sources/internal/babylon.editor.event.js",
+      "sources/internal/babylon.editor.tools.js",
+
+      "sources/gui/babylon.editor.guiElement.js",
+      "sources/gui/babylon.editor.guiDialog.js",
+      "sources/gui/babylon.editor.guiEdit.js",
+      "sources/gui/babylon.editor.guiForm.js",
+      "sources/gui/babylon.editor.guiGraph.js",
+      "sources/gui/babylon.editor.guiGrid.js",
+      "sources/gui/babylon.editor.guiLayouts.js",
+      "sources/gui/babylon.editor.guiList.js",
+      "sources/gui/babylon.editor.guiPanel.js",
+      "sources/gui/babylon.editor.guiToolbar.js",
+      "sources/gui/babylon.editor.guiWindow.js",
+
+      "sources/editionTools/babylon.editor.abstractTool.js",
+      "sources/editionTools/babylon.editor.abstractDatTool.js",
+      "sources/editionTools/babylon.editor.generalTool.js",
+      "sources/editionTools/babylon.editor.animationTool.js",
+      "sources/editionTools/babylon.editor.audioTool.js",
+      "sources/editionTools/babylon.editor.lensFlareTool.js",
+      "sources/editionTools/babylon.editor.lightTool.js",
+      "sources/editionTools/babylon.editor.materialTool.js",
+      "sources/editionTools/babylon.editor.particleSystemTool.js",
+      "sources/editionTools/babylon.editor.postProcesses.js",
+      "sources/editionTools/babylon.editor.reflectionProbeTool.js",
+      "sources/editionTools/babylon.editor.sceneTool.js",
+
+      "sources/editionTools/materialEditors/babylon.editor.abstractMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.pbrMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.skyMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.standardMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.waterMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.lavaMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.furMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.gradientMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.terrainMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.triPlanarMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.gridMaterialTool.js",
+      "sources/editionTools/materialEditors/babylon.editor.fireMaterialTool.js",
+
+      "sources/babylon.editor.core.js",
+      "sources/babylon.editor.editionTool.js",
+      "sources/babylon.editor.editPanel.js",
+      "sources/babylon.editor.main.js",
+      "sources/babylon.editor.mainToolbar.js",
+      "sources/babylon.editor.sceneGraphTool.js",
+      "sources/babylon.editor.sceneToolbar.js",
+      "sources/babylon.editor.timeline.js",
+      "sources/babylon.editor.toolsToolbar.js",
+      "sources/babylon.editor.transformer.js",
+
+      "sources/scene/babylon.editor.filesInput.js",
+      "sources/scene/babylon.editor.sceneFactory.js",
+      "sources/scene/babylon.editor.sceneManager.js",
+
+      "sources/storage/babylon.editor.storage.js",
+      "sources/storage/babylon.editor.oneDriveStorage.js",
+
+      "sources/export/babylon.editor.exporter.js",
+      "sources/export/babylon.editor.projectExporter.js",
+      "sources/export/babylon.editor.projectImporter.js",
+      "sources/export/babylon.editor.storageExporter.js",
+
+      "sources/userInterfaces/babylon.editor.animationEditor.js",
+      "sources/userInterfaces/babylon.editor.babylonExporter.js",
+      "sources/userInterfaces/babylon.editor.launchEditor.js",
+      "sources/userInterfaces/babylon.editor.objectPicker.js",
+      "sources/userInterfaces/babylon.editor.particleSystemEditor.js",
+      "sources/userInterfaces/babylon.editor.textureEditor.js",
+
+      "sources/babylon.editor.pluginManager.js"
+    ]
+  },
+  "plugins": {
+    "files": [
+      "sources/plugins/babylon.editor.simpleMaterialTool.js",
+      "sources/plugins/babylon.editor.geometriesMenu.js"
+    ]
+  }
+}
